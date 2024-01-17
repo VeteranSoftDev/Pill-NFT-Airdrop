@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 18px;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2a222d !important;
+  color: #11161f !important;
+  min-height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem 0;
+}
+.navbar-brand {
+  width: 8rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: calc(100vh - 450px);
+  padding: 0 1rem;
+}
+.card {
+  background-color: #191b1f;
+  max-width: 600px;
+  width : 400px;
+  border-radius: 20px;
+  margin: 35px 0;
+  padding: 8px 8px;
+  color: #000;
+}
+.card-title {
+  padding: 16px 16px;
+  font-size: 16px;
+  color : #ebebeb;
+}
+.card-description {
+  font-size: 16px;
+  margin: 16px 0;
+}
+.form-helper {
+  margin: 1rem 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.form-group {
+  position: relative;
+}
+.form-label {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color : #ddd;
+}
+.form-input {
+  background: #212429;
+  color : #ebebeb;
+  width: 100%;
+  padding: 16px 24px 12px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  border-radius: 20px;
+  border: 0px solid #000;
+  text-align: left;
+  margin-bottom: 8px;
+
+}
+.form-input::-webkit-inner-spin-button,
+.form-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-input[type="number"] {
+  -moz-appearance: textfield;
+}
+.form-input::placeholder{
+  color : #b2b9d2
+}
+.form-footer {
+  margin-top: 2rem;
+}
+.form-btn {
+  border-radius: 15px;
+  background-color: #172941;
+  color: #5090ea;
+  width: 100%;
+  font-size: 16px;
+  padding: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+  height: unset;
+  line-height: unset;
+  border: 0px solid #000;
+  margin-bottom: 8px;
+}
+.form-btn:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, .15) 0 0)
+}
+.form-btn[disabled] {
+  cursor: not-allowed;
+}
+.form-btn--secondary {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #000;
+}
+.form-action {
+  display: block;
+  text-align: center;
+  margin-top: 0.75rem;
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer-wrapper {
+  width: 100%;
+  padding: 0 1rem;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.75rem 0;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+.footer-left,
+.footer-right {
+  width: 100%;
+  text-align: center;
+}
+.footer-left {
+  font-size: 0.875rem;
+  color: #fff;
+  opacity: 0.8;
+  order: 2;
+  margin: 0.5rem 0;
+}
+.footer-right {
+  order: 1;
+}
+.footer-link {
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.snowflakes {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.snowflake {
+  padding-left: 15px;
+  font-family: Cambria, Georgia, serif;
+  font-size: 14px;
+  line-height: 24px;
+  position: fixed;
+  color: #fff;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+}
+.snowflake:hover {
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    flex-direction: row;
+  }
+  .footer-left,
+  .footer-right {
+    width: 50%;
+  }
+  .footer-left {
+    text-align: left;
+    margin: 0;
+    order: 1;
+  }
+  .footer-right {
+    text-align: right;
+    order: 2;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    max-width: 1200px;
+  }
+}
+.Toastify__toast-body {
+  font-size: 16px;
+}
+.Toastify__toast-icon {
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=main.7f87acef.chunk.css.map */
+
+.wallet-adapter-dropdown {
+    @apply w-full;
+}
+
+.wallet-adapter-button {
+    @apply rounded-full w-full;
+}
+
+.wallet-adapter-button-trigger {
+    @apply bg-pink-500 justify-center !important;
+}
+
+.wallet-adapter-dropdown-list {
+    @apply top-auto bottom-full md:top-full md:bottom-auto md:left-0 md:right-auto;
+}
+
+.wallet-adapter-dropdown-list-active {
+    @apply transform -translate-y-3 md:translate-y-3;
+}
+
+.schedule-table {
+    background-color: '#e57373';
+    font: "white";
+}
